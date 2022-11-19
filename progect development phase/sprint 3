@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <title>Car Performance Prediction</title>
+   
+</head>
+<body>
+    
+    <h1><center><b>Car Performance Prediction</b></center></h1>
+    <h2><center>ENTER THE BELOW DATA TO FIND THE CAR'S PERFORMANCE</center></h2></br></br>
+    <center>
+        <form action="http://localhost:5000/login" method="post" >
+
+        <label for="noc">Enter No. of Cylinders </label><br>
+            <input type="text" id="noc" name="noc" value=" "><br><br>
+        <label for="dpm">Enter the Displacement</label><br>
+            <input type="text" id="dpm" name="dpm" value=""><br><br>
+        <label for="hp">Enter the Hourse Power </label><br>
+            <input type="text" id="hp" name="hp" value=" "><br><br>
+            <label for="w">Enter the Weight </label><br>
+            <input type="text" id="w" name="w" value=" "><br><br>
+        <label for="a">Enter the Acceleration</label><br>
+            <input type="text" id="a" name="a" value=""><br><br>
+        <label for="my">Enter the Model Year </label><br>
+            <input type="text" id="my" name="my" value=" "><br><br>
+        <label for="o">Enter the Origin </label><br>
+            <input type="text" id="o" name="o" value=" "><br><br>
+
+        <input type="submit"  value="Check the Performance"><br><br>
+        
+        {{ label }}
+        {{ output }}
+       
+    </form></center>
+
+</body>
+</html>
